@@ -60,26 +60,6 @@ def thr_2():
             sleep(2)
 
 
-first_thread = threading.Thread(target=thr_1, name="first_thread").start()
-second_thread = threading.Thread(target=thr_2, name="second_thread").start()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    first_thread = threading.Thread(target=thr_1, name="first_thread").start()
+    second_thread = threading.Thread(target=thr_2, name="second_thread").start()
